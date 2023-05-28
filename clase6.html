@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        :root {
+            --blanco:#FFFFFF;
+        --negro:#000000;
+        --rosado:#C7C7C7;
+        --caja-texto:#F7F7F7;
+        --verde:#ACD9B2;
+        --sm:14px;
+        --md:16px;
+        --lg:18px;    
+        }
+        .body {
+         margin: 0;
+         font-family:'Quicksand', sans-serif;  
+        }
+        .todo {
+          width: 100%;
+           height:100vh; 
+           display: grid;
+           place-items: center;
+        }
+        .todo2 {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            height: 300px;
+        }
+        .logo {
+            width:150px;
+            margin-bottom:48px;
+            justify-self: center;
+            display: none;
+        }
+        .texto-grande {
+          font-size:var(--lg);  
+          margin-bottom: 12px;
+          text-align: center;
+        }
+        .texto-pequeno {
+            color: var(--rosado);
+            text-align: center;
+            margin: 0;
+            font-size:var(--md);
+            font-weight: 300px;
+            margin-bottom:32px ;
+        }
+        .formulario {
+            display: flex;
+            flex-direction: column;
+        }
+        .contrasena {
+          font-size: var(--sm);
+          margin-bottom: 4px;
+           font-weight:bold ;  
+        }
+        .caja {
+            background-color: var(--caja-texto);
+            border-radius: 8px;
+            border: none;
+            margin-bottom: 6px;
+            font-size:var(--md) ;
+            padding: 6px;
+        }
+        .boton {
+            background-color: var(--verde);
+            border-radius:8px ;
+            border: none;
+            font-size: var(--md);
+            color: var(--blanco);
+            margin-top: 14px;
+            margin-bottom: 14px;
+            font-weight: bold;
+            height: 50px;
+        }
+        @media (max-width:640px) {
+            .logo {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="todo">
+        <div class="todo2">
+            <img src="./logos/favicon_yard_sale.svg" class="logo">
+            <h1 class="texto-grande">Me llamo Samantha Emilia</h1>
+            <p class="texto-pequeno">Amo a mis padres</p>
+
+            <form action="/" class="formulario">
+
+            <label for="caja-contrasena1"
+            class="contrasena">contrasena</label>
+            <input type="password"
+            id="caja-contrasena1"class="caja">
+
+            <label for="caja-contrasena2"
+            class="contrasena">contrasena</label>
+            <input type="pasword"
+            id="caja-contrasena2" class="caja">
+
+
+            <input type="submit" value="confirmar" class="boton">
+
+
+        
+        </div>
+    </div>
+    
+</body>
+</html>
